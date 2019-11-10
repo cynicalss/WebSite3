@@ -7,35 +7,169 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
-                    </asp:ContentPlaceHolder>
-                        <link href="css/Main.css" rel="stylesheet" type="text/css">
+
+    <link href="css/Main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">calendarDateFormat = "dd.MM.yyyy";
+
+    </script>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 402px;
+        }
+        .auto-style2 {
+            width: 346px;
+        }
+    </style>
 
 </head>
-<body class="MainMasterPage">
+<body>
+   
+
     <form id="form1" runat="server">
-    <div class="content">
-        <table style="width: 100%;">
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
+  
+       <div id="wrapper">
+            <div id="header">
+                <div id="logo">
+                    <div class="logolink">
+                    <<a href="http://www.brra.bg/Default.ra" title=""></a>
+                    <h1 id="ctl00_hMinistry">МИНИСТЕРСТВО НА ПРАВОСЪДИЕТО</h1>
+                    <h2 id="ctl00_hAgency">АГЕНЦИЯ ПО ВПИСВАНИЯТА</h2></div>
+                </div>
+                <div id="bar">
+                    <div class="headertext"><h1 id="ctl00_hRegister">Търговски регистър и регистър на ЮЛНЦ</h1></div>
+                    <div class="flags">
+                        
+                            <select name="ctl00$ddlLanguageChoice" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ddlLanguageChoice\',\'\')', 0)" id="ctl00_ddlLanguageChoice">
+	<option selected="selected" value="bg-BG">Български</option>
+	<option value="en-US">English</option>
 
+</select> 
+                     
+                    </div>
+              
+                    
+                    <div id="topcontainer">
+                        <asp:Image ID="Image1" runat="server" AlternateText="Home" ImageUrl="img/homeicon.png"/>
+                        <asp:Image ID="Image2" runat="server" AlternateText="Търсене в портала" ImageUrl="img/searchicon.png"/>
+                        <asp:Image ID="Image3" runat="server" AlternateText="Контакти" ImageUrl="img/contacticon.png"/>
+                        <asp:Image ID="Image4" runat="server" AlternateText="Поддръжка" ImageUrl="img/supporticon.png"/>
+                        <asp:Image ID="Image5" runat="server" AlternateText="Карта на сайта" ImageUrl="img/sitemapicon.png"/>
+                        <asp:Image ID="Image6" runat="server" AlternateText="Помощ" ImageUrl="img/help.png"/>
 
-      
+                     </div>
+                </div>
+            </div>
+        
+
+ <div id="focus">
+        <span class="focusText">
+ 	    <div style="width: 4250px; overflow: hidden;" class="marquee0"><div style="width: 925px; visibility: visible; padding: 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: 0px none; height: 26px; position: relative; overflow: hidden;"><div style="width: 4250px; position: absolute; left: -577px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
+ Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
+съдът, държавните органи, органите на местното самоуправление и местната
+ администрация и лицата, на които е възложено упражняването на публична 
+функция, организации, предоставящи обществени услуги, включително 
+банките нямат право да изискват доказването на обстоятелства, вписани в 
+търговския регистър, и представянето на актове, обявени в търговския 
+регистър.</div><div style="width: 4250px; position: absolute; left: 3673px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
+ Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
+съдът, държавните органи, органите на местното самоуправление и местната
+ администрация и лицата, на които е възложено упражняването на публична 
+функция, организации, предоставящи обществени услуги, включително 
+банките нямат право да изискват доказването на обстоятелства, вписани в 
+търговския регистър, и представянето на актове, обявени в търговския 
+регистър.</div></div></div>
+        </span>
+
+        <script type="text/javascript">
+            marqueeInit({
+                uniqueid: 'mycrawler',
+                style: {
+                    'padding': '0',
+                    'width': '925px',
+                    'background': 'none',
+                    'border': '0'
+                },
+                inc: 8, //speed - pixel increment for each iteration of this marquee's movement
+                mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+                moveatleast: 2,
+                neutral: 150,
+                savedirection: true
+            });
+        </script>
+
     </div>
-    </form>
+<td style="vertical-align:top">
+                            
+                            <span id="ctl00_rl1">
+                                    <ul id="nav">
+                                
+                                    <li>
+                                        <asp:Menu runat="server">
+                                          <Items>
+                                                <asp:MenuItem Text="Начало" Value="Начало" NavigateUrl="Default.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="За агенцията" Value="За агенцията" NavigateUrl="Page1.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Справки" Value="Справки" NavigateUrl="Page2.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Електронни услуги" Value="Електронни услуги" NavigateUrl="Page3.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Нормативна уредба" Value="Нормативна уредба"></asp:MenuItem>
+                                                <asp:MenuItem Text="Документи" Value="Документи"></asp:MenuItem>
+                                                <asp:MenuItem Text="Видео уроци" Value="Видео уроци"></asp:MenuItem>
+                                                <asp:MenuItem Text="Новини" Value="Новини"></asp:MenuItem>
+                                                <asp:MenuItem Text="Връзки" Value="Връзки"></asp:MenuItem>
+                                                <asp:MenuItem Text="Несъстоятелност" Value="Несъстоятелност"></asp:MenuItem>
+                                                <asp:MenuItem Text="Сигнали и предложения" Value="Сигнали и предложения"></asp:MenuItem>
+                                                <asp:MenuItem Text="Тестово подписване" Value="Тестово подписване"></asp:MenuItem>
+                                            </Items>
+                                        </asp:Menu>
+                           </li>
+                                    </ul></span>
+                        </td>
+
+
+
+
+           <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+     </asp:ContentPlaceHolder>
+                
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+
+         
+       
+       
+
+            <div id="footer">
+                <span id="ctl00_labelAgencyInfo">2007, Агенция по вписванията</span>
+                &nbsp;&nbsp;<a href="http://www.brra.bg/UsageConditions.doc" id="ctl00_aUsage" class="whiteLink" target="_blank">Условия за ползване</a>
+            </div>
+        </div>
+    
+
+            <script language="javascript">
+            function fnTrapKD(btn, event){
+             if (document.all){
+              if (event.keyCode == 13){
+               event.returnValue=false;
+               event.cancel = true;
+               btn.click();
+              }
+             }
+             else if (document.getElementById){
+              if (event.which == 13){
+               event.returnValue=false;
+               event.cancel = true;
+               btn.click();
+                  }
+                 }
+            else if(document.layers){
+              if(event.which == 13){
+               event.returnValue=false;
+               event.cancel = true;
+               btn.click();
+              }
+             }
+            }
+        </script></form>
+
 </body>
 </html>
