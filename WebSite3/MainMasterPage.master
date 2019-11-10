@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                        <link href="css/Main.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="MainMasterPage">
+    <form id="form1" runat="server">
+    <div class="content">
+        <table style="width: 100%;">
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+
+      
+    </div>
+    </form>
+</body>
+</html>
