@@ -115,7 +115,8 @@
                     <tbody><tr id="ctl00_mainContent_rowLogin">
 	<td align="right">
                             <div id="logIn">
-                                <a id="ctl00_mainContent_linkButtonLogin" class="labelDefaultTitle" href="javascript:__doPostBack('ctl00$mainContent$linkButtonLogin','')">ВХОД</a>
+                                <asp:Button ID="Button1" runat="server" Text="ВХОД" OnClick="Button1_Click" PostBackUrl="login.aspx"/>
+                                <!--<a id="ctl00_mainContent_linkButtonLogin" class="labelDefaultTitle" href="javascript:__doPostBack('ctl00$mainContent$linkButtonLogin','')">ВХОД</a>-->
                                 <br>
                                 
                             </div>

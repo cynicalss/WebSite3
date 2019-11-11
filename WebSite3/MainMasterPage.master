@@ -112,7 +112,7 @@
                                                 <asp:MenuItem Text="Справки" Value="Справки" NavigateUrl="Page2.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Електронни услуги" Value="Електронни услуги" NavigateUrl="Page3.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Нормативна уредба" Value="Нормативна уредба"></asp:MenuItem>
-                                                <asp:MenuItem Text="Документи" Value="Документи"></asp:MenuItem>
+                                                <asp:MenuItem Text="Документи" Value="Документи" NavigateUrl="Page4.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Видео уроци" Value="Видео уроци"></asp:MenuItem>
                                                 <asp:MenuItem Text="Новини" Value="Новини"></asp:MenuItem>
                                                 <asp:MenuItem Text="Връзки" Value="Връзки"></asp:MenuItem>
