@@ -13,12 +13,6 @@
         .auto-style5 {
             height: 53px;
         }
-        .auto-style7 {
-            cursor: hand;
-            width: 23px;
-            height: 15px;
-            margin-top: 9;
-        }
         .auto-style8 {
             width: 489px;
         }
@@ -27,6 +21,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+
+    <!-- Справки -->
+
 
        <!DOCTYPE html>
 <html>
@@ -45,7 +42,19 @@
     <h2>
         <span id="ctl00_ContentPlaceHolder1_SearchHomeControl1_lblHeader">Вписвания, заличавания и обявявания</span></h2>
     <div class="search_form">
-        <div style="font-size:X-Small;"><span style="margin:5px;float:left;"><img src="img/CaptchaImage.jpg" width="180" height="50" border="0"></span><span style="margin:5px;float:left;">Въведете показания код:<br><input name="ctl00$ContentPlaceHolder1$SearchHomeControl1$CaptchaControl1" type="text" size="5" maxlength="5"></span><br clear="all"></div>
+        <div style="font-size:X-Small;">
+
+            <span style="margin:5px;float:left;">
+            <!--<img src="img/CaptchaImage.jpg" width="180" height="50" border="0">-->
+                <asp:Image ID="Image1" runat="server" Height="46px" ImageUrl="~/img/CaptchaImage.jpg" Width="192px" />
+            </span>
+
+            <span style="margin:5px;float:left;">Въведете показания код:<br>
+                <!--<input name="ctl00$ContentPlaceHolder1$SearchHomeControl1$CaptchaControl1" type="text" size="5" maxlength="5">-->
+                <input id="Text1" type="text" />
+            </span><br clear="all">
+
+        </div>
         
         <table cellspacing="10" class="auto-style3">
             <tbody><tr>
@@ -65,16 +74,18 @@
                 <tbody>
                     <tr valign="top">
                     <td style="padding-right: 5px;">
-                        <input id="Text1" type="text" />
+                        <input id="Text2" type="text" />
                     </td>
 
                     <td style="padding-left: 5px; padding-right: 5px;">
-                        <input id="Text1" type="text" />
+                        <input id="Text3" type="text" />
                     <td style="padding-left: 5px;">
-                        <input id="Text1" type="text" />
+                        <input id="Text4" type="text" />
                     <td style="padding-left: 5px">
                     </td>
-                    <td valign="baseline"><img src="img/datepicker.gif" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_triggerIssueDate" style="cursor: hand">
+                    <td valign="baseline">
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/img/datepicker.gif"/>
+                        <!--<img src="img/datepicker.gif" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_triggerIssueDate" style="cursor: hand">-->
                        </td>
                 </tr>               
             </tbody></table>
@@ -130,16 +141,17 @@
                 
                 <tbody><tr valign="top">
                     <td style="padding-right: 5px;">
-                        <input id="Text1" type="text" />
+                        <input id="Text5" type="text" />
                     </td>
                     <td style="padding-left: 5px; padding-right: 5px;">
-                        <input id="Text1" type="text" />
+                        <input id="Text6" type="text" />
                     <td style="padding-left: 5px;">
-                        <input id="Text1" type="text" />
+                        <input id="Text7" type="text" />
                     <td style="padding-left: 5px">
                     </td>
                     <td valign="baseline">
-                        <img src="img/datepicker.gif" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_triggerIssueDate1" style="cursor: hand"></td>
+                        <asp:Image ID="Image3" runat="server" ImageUrl="~/img/datepicker.gif"/>
+                        <!--<img src="img/datepicker.gif" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_triggerIssueDate1" style="cursor: hand"></td>-->
                 </tr>               
             </tbody></table>
 
@@ -182,16 +194,17 @@
                 
                 <tbody><tr valign="top">
                     <td style="padding-right: 5px;">
-                        <input id="Text1" type="text" />
+                        <input id="Text8" type="text" />
                     </td>
                     <td style="padding-left: 5px; padding-right: 5px;">
-                        <input id="Text1" type="text" />
+                        <input id="Text9" type="text" />
                     <td style="padding-left: 5px;">
-                        <input id="Text1" type="text" />
+                        <input id="Text10" type="text" />
                     <td style="padding-left: 5px">
                     </td>
                     <td valign="baseline">
-                        <img src="img/datepicker.gif" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_triggerIssueDate1" style="cursor: hand"></td>
+                        <asp:Image ID="Image4" runat="server" ImageUrl="~/img/datepicker.gif"/>
+                        <!--<img src="img/datepicker.gif" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_triggerIssueDate1" style="cursor: hand"></td>-->
                 </tr>               
             </tbody></table>
                     
@@ -226,27 +239,16 @@
 	}
 	);
 </script> 
-
                 </td>
             </tr>
         </tbody></table>
-
                         <br>
         <span id="ctl00_ContentPlaceHolder1_SearchHomeControl1_lblErrors" style="color:Red;font-size:X-Small;"></span><br>
         <div id="ctl00_ContentPlaceHolder1_SearchHomeControl1_ValidationSummary1" style="color:Red;font-size:X-Small;display:none;">
 
+</div>   
 </div>
-    
-    
-    
 </div>
-
-    </div>
-
-
-     
-    </div>
-
-
-            </asp:Content>
+</div>
+</asp:Content>
 

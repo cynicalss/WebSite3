@@ -40,12 +40,14 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img id="ctl00_mainContent_Image3" src="img/dot.gif" style="border-width:0px;">
+                                        <asp:Image ID="Image3" runat="server" ImageUrl="img/dot.gif" BorderWidth="0px"/>
+                                        <!--<img id="ctl00_mainContent_Image3" src="img/dot.gif" style="border-width:0px;">-->
                                         <a id="ctl00_mainContent_linkbuttonPersonReport" class="labelControl" href="javascript:__doPostBack('ctl00$mainContent$linkbuttonPersonReport','')">По физическо или юридическо лице</a></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img id="ctl00_mainContent_Image4" src="img/dot.gif" style="border-width:0px;">
+                                        <asp:Image ID="Image4" runat="server" ImageUrl="img/dot.gif" BorderWidth="0px"/>
+                                        <!--<img id="ctl00_mainContent_Image4" src="img/dot.gif" style="border-width:0px;">-->
                                         <a id="ctl00_mainContent_linkbuttonCompanies" class="labelControl" href="javascript:__doPostBack('ctl00$mainContent$linkbuttonCompanies','')">Списък на запазени фирми/ наименования</a></td>
                                 </tr>
                             </tbody></table>
@@ -58,12 +60,14 @@
                                 </tr>
                                 <tr>
                                     <td colspan="2"> 
-                                        <img id="ctl00_mainContent_Image1" src="img/dot.gif" style="border-width:0px;">
+                                        <asp:Image ID="Image5" runat="server" ImageUrl="img/dot.gif" BorderWidth="0px"/>
+                                        <!--<img id="ctl00_mainContent_Image1" src="img/dot.gif" style="border-width:0px;">-->
                                         <a id="ctl00_mainContent_linkbuttonDeclaration" class="labelControl" href="javascript:__doPostBack('ctl00$mainContent$linkbuttonDeclaration','')">Подаване на заявление по образец</a></td>
                                 </tr>
                                 <tr>
                                     <td style="vertical-align:baseline" width="10px">
-                                        <img id="ctl00_mainContent_Image2" src="img/dot.gif" style="border-width:0px;">
+                                        <asp:Image ID="Image6" runat="server" ImageUrl="img/dot.gif" BorderWidth="0px"/>
+                                        <!--<img id="ctl00_mainContent_Image2" src="img/dot.gif" style="border-width:0px;">-->
                                      </td>
                                      <td style="vertical-align:baseline">   
                                         <a id="ctl00_mainContent_linkbuttonTranscripts" class="labelControl" href="javascript:__doPostBack('ctl00$mainContent$linkbuttonTranscripts','')">Удостоверения за актуално състояние,  вписвания, обявявания, преписи</a>
@@ -71,7 +75,8 @@
                                 </tr>
                                 <tr>
                                     <td colspan="2">
-                                        <img id="ctl00_mainContent_Image5" src="img/dot.gif" style="border-width:0px;">
+                                        <asp:Image ID="Image7" runat="server" ImageUrl="img/dot.gif" BorderWidth="0px"/>
+                                        <!--<img id="ctl00_mainContent_Image5" src="img/dot.gif" style="border-width:0px;">-->
                                         <a id="ctl00_mainContent_linkbuttonCompanyDeclaration" class="labelControl" href="javascript:__doPostBack('ctl00$mainContent$linkbuttonCompanyDeclaration','')">Удостоверения за запазена фирма/наименование</a></td>
                                 </tr>
                             </tbody></table>
@@ -101,8 +106,10 @@
             <!--style="vertical-align:top">-->
 
                     <a name="Нова тарифа" target="_blank" id="bb">
-                    <img id="Img2" alt="" src="img/contact.gif" width="340"height="85" />
-                    <img id="Img1" alt="" src="img/tarifa.gif" width="340"height="85" />
+                        <asp:Image ID="Image1" runat="server" ImageUrl="img/contact.gif" Height="85px" Width="340px" />
+                        <asp:Image ID="Image2" runat="server" ImageUrl="img/tarifa.gif" Height="85px" Width="340px"/>
+                    <!--<img id="Img2" alt="" src="img/contact.gif" width="340"height="85" />
+                    <img id="Img1" alt="" src="img/tarifa.gif" width="340"height="85" />-->
 </a>
                 <br/>
 <span id="ctl00_mainContent_Label55" class="labelDefaultTitle">Банкова с/ка:BG36CREX92603114549401</span>
@@ -123,6 +130,7 @@
             
                             <span id="ctl00_mainContent_Label2" class="labelFont11" style="display:inline-block;width:190px;">За извършване на електронно разплащане през портала е необходима регистрация</span>
                         </td>
+                        
 </tr>
 
                     
@@ -164,5 +172,6 @@
             </div>
 
 
-
+    <br>
+    <br>
 </asp:Content>

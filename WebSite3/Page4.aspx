@@ -5,7 +5,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
-         <!DOCTYPE html>
+    
+    <!-- Документи -->
+    
+    <!DOCTYPE html>
 <html>
     <head>
         <title>Test Case</title>

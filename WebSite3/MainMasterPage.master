@@ -9,9 +9,23 @@
     </asp:ContentPlaceHolder>
 
     <link href="css/Main.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">calendarDateFormat = "dd.MM.yyyy";
+    <script src="javascript/crawler.js" type="text/javascript"></script>
+    <script type="text/javascript">calendarDateFormat = "dd.MM.yyyy";</script>
 
-    </script>
+        <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+</script>
 
     <style type="text/css">
         .auto-style1 {
@@ -32,7 +46,7 @@
             <div id="header">
                 <div id="logo">
                     <div class="logolink">
-                    <<a href="http://www.brra.bg/Default.ra" title=""></a>
+                    <a href="http://localhost:52805/Default.aspx/" title=""></a>
                     <h1 id="ctl00_hMinistry">МИНИСТЕРСТВО НА ПРАВОСЪДИЕТО</h1>
                     <h2 id="ctl00_hAgency">АГЕНЦИЯ ПО ВПИСВАНИЯТА</h2></div>
                 </div>
@@ -62,16 +76,44 @@
             </div>
         
 
- <div id="focus">
+ <!--<div id="focus">
         <span class="focusText">
- 	    <div style="width: 4250px; overflow: hidden;" class="marquee0"><div style="width: 925px; visibility: visible; padding: 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: 0px none; height: 26px; position: relative; overflow: hidden;"><div style="width: 4250px; position: absolute; left: -577px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
+                    <div style="width: 4250px; overflow: hidden;" class="marquee0">
+                        <div style="width: 925px; visibility: visible; padding: 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: 0px none; height: 26px; position: relative; overflow: hidden;">
+                            <div style="width: 4250px; position: absolute; left: -577px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
+                            Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
+                            съдът, държавните органи, органите на местното самоуправление и местната
+                            администрация и лицата, на които е възложено упражняването на публична 
+                            функция, организации, предоставящи обществени услуги, включително 
+                            банките нямат право да изискват доказването на обстоятелства, вписани в 
+                            търговския регистър, и представянето на актове, обявени в търговския 
+                            регистър.
+                            </div>
+
+                            <div style="width: 4250px; position: absolute; left: 3673px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
+                                Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
+                                съдът, държавните органи, органите на местното самоуправление и местната
+                                администрация и лицата, на които е възложено упражняването на публична 
+                                функция, организации, предоставящи обществени услуги, включително 
+                                банките нямат право да изискват доказването на обстоятелства, вписани в 
+                                търговския регистър, и представянето на актове, обявени в търговския 
+                                регистър.
+                            </div>
+
+                        </div>
+                    </div>
+        </span> -->
+     
+     <div id="focus">
+        <span class="focusText">
+ 	    <div style="width: 4250px; overflow: hidden;" class="marquee0"><div style="width: 925px; visibility: visible; padding: 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: 0px none; height: 26px; position: relative; overflow: hidden;"><div style="width: 4250px; position: absolute; left: -205px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
  Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
 съдът, държавните органи, органите на местното самоуправление и местната
  администрация и лицата, на които е възложено упражняването на публична 
 функция, организации, предоставящи обществени услуги, включително 
 банките нямат право да изискват доказването на обстоятелства, вписани в 
 търговския регистър, и представянето на актове, обявени в търговския 
-регистър.</div><div style="width: 4250px; position: absolute; left: 3673px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
+регистър.</div><div style="width: 4250px; position: absolute; left: 4045px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
  Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
 съдът, държавните органи, органите на местното самоуправление и местната
  администрация и лицата, на които е възложено упражняването на публична 
@@ -80,6 +122,25 @@
 търговския регистър, и представянето на актове, обявени в търговския 
 регистър.</div></div></div>
         </span>
+
+        <script type="text/javascript">
+            marqueeInit({
+                uniqueid: 'mycrawler',
+                style: {
+                    'padding': '0',
+                    'width': '925px',
+                    'background': 'none',
+                    'border': '0'
+                },
+                inc: 8, //speed - pixel increment for each iteration of this marquee's movement
+                mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+                moveatleast: 2,
+                neutral: 150,
+                savedirection: true
+            });
+        </script>
+
+    </div>
 
         <script type="text/javascript">
             marqueeInit({
@@ -111,14 +172,13 @@
                                                 <asp:MenuItem Text="За агенцията" Value="За агенцията" NavigateUrl="Page1.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Справки" Value="Справки" NavigateUrl="Page2.aspx"></asp:MenuItem>
                                                 <asp:MenuItem Text="Електронни услуги" Value="Електронни услуги" NavigateUrl="Page3.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Нормативна уредба" Value="Нормативна уредба"></asp:MenuItem>
                                                 <asp:MenuItem Text="Документи" Value="Документи" NavigateUrl="Page4.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Видео уроци" Value="Видео уроци"></asp:MenuItem>
-                                                <asp:MenuItem Text="Новини" Value="Новини"></asp:MenuItem>
-                                                <asp:MenuItem Text="Връзки" Value="Връзки"></asp:MenuItem>
-                                                <asp:MenuItem Text="Несъстоятелност" Value="Несъстоятелност"></asp:MenuItem>
-                                                <asp:MenuItem Text="Сигнали и предложения" Value="Сигнали и предложения"></asp:MenuItem>
-                                                <asp:MenuItem Text="Тестово подписване" Value="Тестово подписване"></asp:MenuItem>
+                                                <asp:MenuItem Text="Видео уроци" Value="Видео уроци" NavigateUrl="Page5.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Новини" Value="Новини" NavigateUrl="Page6.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Връзки" Value="Връзки" NavigateUrl="Page7.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Несъстоятелност" Value="Несъстоятелност" NavigateUrl="Page8.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Сигнали и предложения" Value="Сигнали и предложения" NavigateUrl="Page9.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Галерия" Value="Галерия" NavigateUrl="Gallery1.aspx"></asp:MenuItem>
                                             </Items>
                                         </asp:Menu>
                            </li>
@@ -135,8 +195,7 @@
                     </asp:ContentPlaceHolder>
 
          
-       
-       
+     
 
             <div id="footer">
                 <span id="ctl00_labelAgencyInfo">2007, Агенция по вписванията</span>
@@ -170,6 +229,6 @@
              }
             }
         </script></form>
-
+    
 </body>
 </html>

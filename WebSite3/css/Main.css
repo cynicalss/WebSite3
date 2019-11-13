@@ -118,6 +118,7 @@ form {
         margin-top: 0px;
         letter-spacing: 0.01em;
         text-align: center;
+
     }
 
 
@@ -174,6 +175,32 @@ form {
     background-position: right 0;
 }
 
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#marq_kill_marg_bord {
+    border: none !important;
+    margin: 0 !important;
+}
+
+/*Маи е за фокуса*/
+
+#focus {
+    background: transparent url(img/orangeFocus.jpg) repeat-x scroll left top;
+    display: inline;
+    float: left;
+    height: 45px;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px;
+    width: 940px;
+    color: #FFFFFF;
+    font-size: 12px;
+}
 
 #header #bar .flags {
     float: right;
