@@ -52,13 +52,12 @@ function __doPostBack(eventTarget, eventArgument) {
                 </div>
                 <div id="bar">
                     <div class="headertext"><h1 id="ctl00_hRegister">Търговски регистър и регистър на ЮЛНЦ</h1></div>
+					
                     <div class="flags">
-                        
                             <select name="ctl00$ddlLanguageChoice" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ddlLanguageChoice\',\'\')', 0)" id="ctl00_ddlLanguageChoice">
-	<option selected="selected" value="bg-BG">Български</option>
-	<option value="en-US">English</option>
-
-</select> 
+								<option selected="selected" value="bg-BG">Български</option>
+								<option value="en-US">English</option>
+							</select> 
                      
                     </div>
               
@@ -72,6 +71,7 @@ function __doPostBack(eventTarget, eventArgument) {
                         <asp:Image ID="Image6" runat="server" AlternateText="Помощ" ImageUrl="img/help.png"/>
 
                      </div>
+					 
                 </div>
             </div>
         
@@ -103,87 +103,65 @@ function __doPostBack(eventTarget, eventArgument) {
                         </div>
                     </div>
         </span> -->
-     
+     <!-- Marti ot tuk se chupi cqlata stranica-->
+	 
+	 <!--FOCUS-->
      <div id="focus">
         <span class="focusText">
- 	    <div style="width: 4250px; overflow: hidden;" class="marquee0"><div style="width: 925px; visibility: visible; padding: 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: 0px none; height: 26px; position: relative; overflow: hidden;"><div style="width: 4250px; position: absolute; left: -205px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
- Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
-съдът, държавните органи, органите на местното самоуправление и местната
- администрация и лицата, на които е възложено упражняването на публична 
-функция, организации, предоставящи обществени услуги, включително 
-банките нямат право да изискват доказването на обстоятелства, вписани в 
-търговския регистър, и представянето на актове, обявени в търговския 
-регистър.</div><div style="width: 4250px; position: absolute; left: 4045px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
- Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
-съдът, държавните органи, органите на местното самоуправление и местната
- администрация и лицата, на които е възложено упражняването на публична 
-функция, организации, предоставящи обществени услуги, включително 
-банките нямат право да изискват доказването на обстоятелства, вписани в 
-търговския регистър, и представянето на актове, обявени в търговския 
-регистър.</div></div></div>
+ 	    <div style="width: 4250px; overflow: hidden;" class="marquee0">
+             <div style="width: 925px; visibility: visible; padding: 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: 0px none; height: 26px; position: relative; overflow: hidden;">
+                 <div style="width: 4250px; position: absolute; left: -205px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
+                    Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
+                    съдът, държавните органи, органите на местното самоуправление и местната
+                    администрация и лицата, на които е възложено упражняването на публична 
+                    функция, организации, предоставящи обществени услуги, включително 
+                    банките нямат право да изискват доказването на обстоятелства, вписани в 
+                    търговския регистър, и представянето на актове, обявени в търговския 
+                    регистър. 
+                </div>
+ 	                                                                                                                                                                                                                                                              </div>
+             <div style="width: 4250px; position: absolute; left: 4045px; white-space: nowrap; top: 1px;">&nbsp;ВНИМАНИЕ!!!
+                    Съгласно Закона за Търговския регистър чл.23. ал.4. ако е посочен ЕИК, 
+                    съдът, държавните органи, органите на местното самоуправление и местната
+                    администрация и лицата, на които е възложено упражняването на публична 
+                    функция, организации, предоставящи обществени услуги, включително 
+                    банките нямат право да изискват доказването на обстоятелства, вписани в 
+                    търговския регистър, и представянето на актове, обявени в търговския 
+                    регистър.
+       		</div>
+    </div>
+
         </span>
-
-        <script type="text/javascript">
-            marqueeInit({
-                uniqueid: 'mycrawler',
-                style: {
-                    'padding': '0',
-                    'width': '925px',
-                    'background': 'none',
-                    'border': '0'
-                },
-                inc: 8, //speed - pixel increment for each iteration of this marquee's movement
-                mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
-                moveatleast: 2,
-                neutral: 150,
-                savedirection: true
-            });
-        </script>
-
     </div>
+	<!--- FOCUS-->
 
-        <script type="text/javascript">
-            marqueeInit({
-                uniqueid: 'mycrawler',
-                style: {
-                    'padding': '0',
-                    'width': '925px',
-                    'background': 'none',
-                    'border': '0'
-                },
-                inc: 8, //speed - pixel increment for each iteration of this marquee's movement
-                mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
-                moveatleast: 2,
-                neutral: 150,
-                savedirection: true
-            });
-        </script>
+   <!--begin of NAVIGATION-->
 
-    </div>
-<td style="vertical-align:top">
-                            
-                            <span id="ctl00_rl1">
-                                    <ul id="nav">
-                                
-                                    <li>
-                                        <asp:Menu runat="server">
-                                          <Items>
-                                                <asp:MenuItem Text="Начало" Value="Начало" NavigateUrl="Default.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="За агенцията" Value="За агенцията" NavigateUrl="Page1.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Справки" Value="Справки" NavigateUrl="Page2.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Електронни услуги" Value="Електронни услуги" NavigateUrl="Page3.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Документи" Value="Документи" NavigateUrl="Page4.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Видео уроци" Value="Видео уроци" NavigateUrl="Page5.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Новини" Value="Новини" NavigateUrl="Page6.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Връзки" Value="Връзки" NavigateUrl="Page7.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Несъстоятелност" Value="Несъстоятелност" NavigateUrl="Page8.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Сигнали и предложения" Value="Сигнали и предложения" NavigateUrl="Page9.aspx"></asp:MenuItem>
-                                                <asp:MenuItem Text="Галерия" Value="Галерия" NavigateUrl="Gallery1.aspx"></asp:MenuItem>
-                                            </Items>
-                                        </asp:Menu>
-                           </li>
-                                    </ul></span>
-                        </td>
+		<div id="ctl00_rl1">
+           <ul id="nav">
+             <li>
+             <asp:Menu runat="server">
+                  <Items>
+                    <asp:MenuItem Text="Начало" Value="Начало" NavigateUrl="Default.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="За агенцията" Value="За агенцията" NavigateUrl="Page1.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Справки" Value="Справки" NavigateUrl="Page2.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Електронни услуги" Value="Електронни услуги" NavigateUrl="Page3.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Документи" Value="Документи" NavigateUrl="Page4.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Видео уроци" Value="Видео уроци" NavigateUrl="Page5.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Новини" Value="Новини" NavigateUrl="Page6.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Връзки" Value="Връзки" NavigateUrl="Page7.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Несъстоятелност" Value="Несъстоятелност" NavigateUrl="Page8.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Сигнали и предложения" Value="Сигнали и предложения" NavigateUrl="Page9.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Галерия" Value="Галерия" NavigateUrl="Gallery1.aspx"></asp:MenuItem>
+                  </Items>
+             </asp:Menu>
+             </li>
+           </ul>
+         
+         </div>
+         <!--end of NAVIGATION-->
+
+
 
 
 

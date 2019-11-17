@@ -6,6 +6,8 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
 
+    <link href="css/gallery.css" rel="stylesheet" type="text/css">
+
 <body>
         <div>
 
