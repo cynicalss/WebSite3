@@ -11,7 +11,7 @@
 <html>
     <head>
         <title>Test Case</title>
-        <link href="css/Page7.css" rel="stylesheet" type="text/css">
+        <link href="css/Main.css" rel="stylesheet" type="text/css">
         <link href="css/calendar-blue.css" rel="stylesheet" type="text/css">
     </head>
 

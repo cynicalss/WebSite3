@@ -1,22 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.master" AutoEventWireup="true" CodeFile="Page2.aspx.cs" Inherits="Page2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <style type="text/css">
-        .auto-style3 {
-            height: 238px;
-            width: 544px;
-        }
-        .auto-style4 {
-            width: 489px;
-            height: 53px;
-        }
-        .auto-style5 {
-            height: 53px;
-        }
-        .auto-style8 {
-            width: 489px;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 </asp:Content>
@@ -29,71 +13,60 @@
 <html>
     <head>
         <title>Test Case</title>
-        <link href="css/Page2.css" rel="stylesheet" type="text/css">
+        <link href="css/Main.css" rel="stylesheet" type="text/css">
         <link href="css/calendar-blue.css" rel="stylesheet" type="text/css">
     </head>
 
 
+    <div id="main-container">
+    
 
+         <!--begin main content-->
 
-   <div id="content" style="width: 770px">
+            <div id="container">
+
         
 <div class="search_panel">
-    <h2>
-        <span id="ctl00_ContentPlaceHolder1_SearchHomeControl1_lblHeader">Вписвания, заличавания и обявявания</span></h2>
+<h2>
+<span id="ctl00_ContentPlaceHolder1_SearchHomeControl1_lblHeader">Вписвания, заличавания и обявявания</span></h2>
     <div class="search_form">
-        <div style="font-size:X-Small;">
-
+    <table>
+		<tr>
+		<td>
             <span style="margin:5px;float:left;">
             <!--<img src="img/CaptchaImage.jpg" width="180" height="50" border="0">-->
                 <asp:Image ID="Image1" runat="server" Height="46px" ImageUrl="~/img/CaptchaImage.jpg" Width="192px" />
             </span>
-
+         </td>
+		<td>
             <span style="margin:5px;float:left;">Въведете показания код:<br>
                 <!--<input name="ctl00$ContentPlaceHolder1$SearchHomeControl1$CaptchaControl1" type="text" size="5" maxlength="5">-->
                 <input id="Text1" type="text" />
             </span><br clear="all">
 
-        </div>
-        
-        <table cellspacing="10" class="auto-style3">
-            <tbody><tr>
-                <td style="font-size: x-small" class="auto-style8">
-                    текуща дата
-                    
-<table cellspacing="0" cellpadding="0">
-    <tbody><tr>
+        </td></tr>
+        <tr>
+        <td style="font-size: x-small" class="auto-style8">текуща дата</td>
         <td>
-                        <span id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_lblHintError" class="error"></span></td>
+            <span id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_lblHintError" class="error"></span></td>
     </tr>
     <tr>
-        <td>
-            <table cellspacing="0" cellpadding="0">
-            
-                
-                <tbody>
-                    <tr valign="top">
-                    <td style="padding-right: 5px;">
+		<td style="padding-right: 5px;">
                         <input id="Text2" type="text" />
-                    </td>
+		</td>
 
-                    <td style="padding-left: 5px; padding-right: 5px;">
-                        <input id="Text3" type="text" />
-                    <td style="padding-left: 5px;">
-                        <input id="Text4" type="text" />
-                    <td style="padding-left: 5px">
-                    </td>
-                    <td valign="baseline">
-                        <asp:Image ID="Image2" runat="server" ImageUrl="~/img/datepicker.gif"/>
+		<td style="padding-left: 5px; padding-right: 5px;">
+                        <input id="Text3" type="text" /></td>
+		<td style="padding-left: 5px;">
+                        <input id="Text4" type="text" /></td>
+		<td style="padding-left: 5px"></td>
+		<td valign="baseline">
+		<asp:Image ID="Image2" runat="server" ImageUrl="~/img/datepicker.gif"/>
                         <!--<img src="img/datepicker.gif" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_triggerIssueDate" style="cursor: hand">-->
-                       </td>
-                </tr>               
-            </tbody></table>
-
-        </td>
-    </tr>
-</tbody></table>
-
+		</td>
+	</tr>               
+<tr>
+<td>
 <input name="ctl00$ContentPlaceHolder1$SearchHomeControl1$currentDate$hDate" type="text" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_hDate" size="10" style="size:10; display: none" class="textBox" onchange="setDateFields(this, document.all.ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_tbDateDay,document.all.ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_tbDateMnt,document.all.ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_tbDateYear)">
 <script type="text/javascript">
 	Calendar.setup(
@@ -110,7 +83,7 @@
                 </td>
             </tr>
             <tr>
-                <td verticale-align="left" class="auto-style4">
+                <td class="auto-style4">
 
                   <asp:DropDownList ID="DropDownList1" runat="server">
 
@@ -122,42 +95,26 @@
 
                   </asp:DropDownList>
                </td>
-                </br>
                 <td align="Left" class="auto-style5">
-                    </td>
+                </td>
             </tr>
             <tr>
                 <td style="font-size: x-small" class="auto-style8">
-                    от дата
-                    
-<table cellspacing="0" cellpadding="0">
-    <tbody><tr>
-        <td>
-                        <span id="ctl00_ContentPlaceHolder1_SearchHomeControl1_fromDate_lblHintError" class="error"></span></td>
-    </tr>
-    <tr>
-        <td>
-            <table cellspacing="0" cellpadding="0" border="0">
-                
-                <tbody><tr valign="top">
-                    <td style="padding-right: 5px;">
-                        <input id="Text5" type="text" />
-                    </td>
+                    от дата</td>
+			<td>
+            <span id="ctl00_ContentPlaceHolder1_SearchHomeControl1_fromDate_lblHintError" class="error"></span></td>
+    	</tr>
+    	<tr>
+                  <td style="padding-right: 5px;">
+                        <input id="Text5" type="text" /></td>
                     <td style="padding-left: 5px; padding-right: 5px;">
-                        <input id="Text6" type="text" />
+                        <input id="Text6" type="text" /></td>
                     <td style="padding-left: 5px;">
-                        <input id="Text7" type="text" />
-                    <td style="padding-left: 5px">
-                    </td>
+                        <input id="Text7" type="text" /></td>
                     <td valign="baseline">
-                        <asp:Image ID="Image3" runat="server" ImageUrl="~/img/datepicker.gif"/>
+                        <asp:Image ID="Image3" runat="server" ImageUrl="~/img/datepicker.gif"/></td>
                         <!--<img src="img/datepicker.gif" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_currentDate_triggerIssueDate1" style="cursor: hand"></td>-->
-                </tr>               
-            </tbody></table>
-
-        </td>
-    </tr>
-</tbody></table>
+                </tr> </table>      
 
 <input name="ctl00$ContentPlaceHolder1$SearchHomeControl1$fromDate$hDate" type="text" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_fromDate_hDate" size="10" style="size:10; display: none" class="textBox" onchange="setDateFields(this, document.all.ctl00_ContentPlaceHolder1_SearchHomeControl1_fromDate_tbDateDay,document.all.ctl00_ContentPlaceHolder1_SearchHomeControl1_fromDate_tbDateMnt,document.all.ctl00_ContentPlaceHolder1_SearchHomeControl1_fromDate_tbDateYear)">
 <script type="text/javascript">
@@ -190,7 +147,6 @@
 
 <br />
                     <br>
-                     <table cellspacing="0" cellpadding="0" border="0">
                 
                 <tbody><tr valign="top">
                     <td style="padding-right: 5px;">
@@ -227,7 +183,7 @@
 
         </td>
     </tr>
-</tbody></table>
+</tbody>
 
 <input name="ctl00$ContentPlaceHolder1$SearchHomeControl1$toDate$hDate" type="text" id="ctl00_ContentPlaceHolder1_SearchHomeControl1_toDate_hDate" size="10" style="size:10; display: none" class="textBox" onchange="setDateFields(this, document.all.ctl00_ContentPlaceHolder1_SearchHomeControl1_toDate_tbDateDay,document.all.ctl00_ContentPlaceHolder1_SearchHomeControl1_toDate_tbDateMnt,document.all.ctl00_ContentPlaceHolder1_SearchHomeControl1_toDate_tbDateYear)">
 <script type="text/javascript">
@@ -241,7 +197,7 @@
 </script> 
                 </td>
             </tr>
-        </tbody></table>
+        </tbody>
                         <br>
         <span id="ctl00_ContentPlaceHolder1_SearchHomeControl1_lblErrors" style="color:Red;font-size:X-Small;"></span><br>
         <div id="ctl00_ContentPlaceHolder1_SearchHomeControl1_ValidationSummary1" style="color:Red;font-size:X-Small;display:none;">

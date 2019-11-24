@@ -13,7 +13,6 @@
     <head>
         <title>Test Case</title>
         <link href="css/Main.css" rel="stylesheet" type="text/css">
-        <link href="css/Page4.css" rel="stylesheet" type="text/css">
     </head>
 
     <table class="mainTable">

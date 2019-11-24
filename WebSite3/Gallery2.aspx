@@ -9,15 +9,18 @@
     <link href="css/gallery.css" rel="stylesheet" type="text/css">
 
 <body>
-        <div>
+    <div id="main-container">
+    
+
+         <!--begin main content-->
+
+            <div id="container">
 
             <asp:Button ID="Button2" Text="Back to Gallery" runat="server" onclick="Button1_Click" />
-            <br /><br />
-            <asp:Image ID="Image1" Width="800px" Height="550px" runat="server" />
-            <br /><br />
+            <div class="gallery-image"><asp:Image ID="Image1" Width="800px" Height="550px" runat="server" /></div>
             <asp:Button ID="Button1" Text="Back to Gallery" runat="server" onclick="Button1_Click" />
 
-        </div>
+        </div></div>
 </body>
 
 </asp:Content>

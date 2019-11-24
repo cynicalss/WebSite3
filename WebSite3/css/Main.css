@@ -1254,3 +1254,22 @@ GridViewForum {
 	text-align:right;
 	padding-right:20px!important;
 	}
+	
+#container .gallery-image{
+	width:90%;
+	margin:20px auto;
+	}
+#container .gallery-image img{
+	width:95%!important;
+	height:auto!important;
+	}
+#container p{
+	text-align: justify;
+	padding:10px;
+	font-size:14px;}
+	
+
+#container h1{
+	text-align:center;
+	padding:10px;
+	font-size:18px;}

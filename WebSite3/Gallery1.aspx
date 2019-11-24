@@ -15,10 +15,14 @@
 <link href="css/gallery.css" rel="stylesheet" type="text/css">
 
 <body>
-        <div>
+    <div id="main-container">
+    
 
-            <asp:Panel ID="Panel1" runat="server" Width="592px"
-             BorderStyle="Dashed" BorderColor="#000066" CssClass="auto-style3" Height="381px">
+         <!--begin main content-->
+
+            <div id="container">
+
+            <asp:Panel ID="Panel1" runat="server"  CssClass="gallery-image" >
             </asp:Panel>
 
             <asp:FileUpload ID="FileUpload1" runat="server" />
@@ -26,7 +30,7 @@
             
             
 
-        </div>
+        </div></div>
 </body>
 
 
