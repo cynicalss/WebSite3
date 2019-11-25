@@ -15,11 +15,16 @@
         <link href="css/Main.css" rel="stylesheet" type="text/css">
         <link href="css/calendar-blue.css" rel="stylesheet" type="text/css">
     </head>
+    <div id="main-container">
+    
 
-      <table style="width: 780px" cellspacing="0" cellpadding="0" bgcolor="#efefef">
-                        <tbody><tr>
-                            <td></td>
-                            <td style="width: 500px">
+         <!--begin main content-->
+
+            <div id="container">
+      <table cellspacing="0" cellpadding="10" bgcolor="#efefef">
+                        <tbody><tr> 
+                            
+                            <td colspan="2" style="padding:10px;">
                                 <span id="ctl00_ContentPlaceHolder1_Label1" class="help">Въведете
                                     Единния идентификационен код (ЕИК) на търговеца/ЮЛНЦ в полето ЕИК. Ако 
                                     подавате заявление за първоначална регистрация на търговец/ЮЛНЦ или за 
@@ -38,10 +43,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="left">
+                            <td class="left"  style="padding:10px;">
                                 ЕИК
                             </td>
-                            <td>
+                            <td  style="padding:10px;">
                                 <input id="Text1" type="text" />
                                 <!--<input name="ctl00$ContentPlaceHolder1$tbTRFirmEIK" type="text" maxlength="9" id="ctl00_ContentPlaceHolder1_tbTRFirmEIK" class="inpNomer9_frfx">-->
                                 <asp:Button ID="Button1" runat="server" Text="Провери" />
@@ -50,10 +55,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="left" style="padding-bottom: 10px">
+                            <td class="left" style="padding: 10px">
                                 Фирма/ Наименование
                             </td>
-                            <td style="padding-bottom: 10px; padding-top: 7px">
+                            <td style="padding-bottom: 10px; padding: 7px">
                                 <span id="ctl00_ContentPlaceHolder1_lblFirmFromTR" style="font-weight:bold;"></span></td>
                         </tr>
                         <tr>
@@ -72,7 +77,7 @@
                             <td style="padding-top: 7px; padding-bottom: 5px; padding-right: 10px;">&nbsp;&nbsp;  
                                 <span id="ctl00_ContentPlaceHolder1_Label2" class="infoMess"> </span>
                                 <!--Marti-->
-                                <div style="overflow: auto; width: 680px; height: 400px;">
+                                <div style="overflow: auto; width: 580px; height: 400px;">
                                
                                     <asp:ListBox ID="ListBox1" runat="server" Height="398px" Width="1081px">
                                  <asp:ListItem>"A1">А1  Заявление за вписване на обстоятелства относно едноличен търговец</asp:ListItem>
@@ -162,7 +167,7 @@
                         </tr>
                     </tbody></table>
                 
-            <table id="ctl00_ContentPlaceHolder1_tblMoveNext" style="margin-right: 60px" align="right">
+            <table id="ctl00_ContentPlaceHolder1_tblMoveNext" style="margin-right: 0px" align="right">
 	<tbody><tr>
 		<td id="ctl00_ContentPlaceHolder1_tdMoveNext" style="height: 24px;" align="right">
             <asp:Button ID="Button2" runat="server" Text="Запиши и продължи" BorderStyle="Solid" BorderWidth="4px" Font-Bold="True" />
@@ -170,6 +175,7 @@
                     </td>
 	</tr>
 </tbody></table>
+</div></div>
 
 
 </asp:Content>

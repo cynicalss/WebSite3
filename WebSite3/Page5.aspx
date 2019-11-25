@@ -15,11 +15,14 @@
         <link href="css/Main.css" rel="stylesheet" type="text/css">
         <link href="css/calendar-blue.css" rel="stylesheet" type="text/css">
     </head>
-
+    <div id="main-container">
     
+
+         <!--begin main content-->
+
+            <div id="container">
     <tbody><tr>
         <td>
-             <div>
 		<table class="GridViewControl" cellspacing="6" cellpadding="6" border="0" id="ctl00_mainContent_contentGridView_mainGridView" style="width:670px;">
 			<tbody><tr class="GridViewItems">
 				<td align="left"><a href="http://www.registryagency.bg/bg/registri/targovski-registar/video-uroci/primerno-podavane-na-zayavlenie-a4-g1-po-elektrone/" target="_blank"><b>Примерно подаване на заявление A4 + Г1 по електронен път (пререгистрация на ООД/ЕООД)</b> </a></td>
@@ -35,10 +38,9 @@
 				<td align="left"><a href="http://www.registryagency.bg/bg/registri/targovski-registar/video-uroci/primerno-podavane-na-zayavlenie-g2-za-obyavyavane-/" target="_blank"><b>Примерно подаване на заявление Г2 за обявяване на Годишен финансов отчет по електронен път</b> </a></td>
 			</tr>
 		</tbody></table>
-	</div>
         </td>
     </tr>
-</tbody>
+</tbody></div></div>
 
 
 </asp:Content>

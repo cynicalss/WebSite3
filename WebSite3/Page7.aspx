@@ -14,10 +14,14 @@
         <link href="css/Main.css" rel="stylesheet" type="text/css">
         <link href="css/calendar-blue.css" rel="stylesheet" type="text/css">
     </head>
+    <div id="main-container">
+    
 
+         <!--begin main content-->
+
+            <div id="container">
     <tbody><tr>
         <td>
-             <div>
 		<table class="GridViewControl" cellspacing="6" cellpadding="6" border="0" id="ctl00_mainContent_contentGridView_mainGridView" style="width:670px;">
 			<tbody><tr class="GridViewItems">
 				<td align="left"><a href="http://www.parliament.bg/" target="_blank"><b>Народно събрание на Република България</b> </a></td>
@@ -41,7 +45,6 @@
 				<td align="left"><a href="http://www.mlsp.government.bg/" target="_blank"><b>Министерство на труда и социалната политика</b> </a></td>
 			</tr><tr class="pager" style="font-weight:bold;text-decoration:none;">
 				<td colspan="2"><span style="color:Black;"><br></span>
-<div align="right" style="vertical-align:10px">
                               <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="img/first.gif" />
                         <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="img/previous.gif" />
 
@@ -73,21 +76,13 @@
                         <!--<input type="image" name="ctl00$mainContent$contentGridView$mainGridView$ctl13$ImageButton3" id="ctl00_mainContent_contentGridView_mainGridView_ctl13_ImageButton3" class="imageButton" src="img/next.gif" style="border-width:0px;">
                          <input type="image" name="ctl00$mainContent$contentGridView$mainGridView$ctl13$ImageButton4" id="ctl00_mainContent_contentGridView_mainGridView_ctl13_ImageButton4" class="imageButton" src="img/last.gif" style="border-width:0px;">
                           -->
-</div>
                  </td>
 			</tr>
 		</tbody></table>
-	</div>
         </td>
     </tr>
 </tbody></table>
-    <style type="text/css">    
-	.pager span { color:#000000;font-weight:bold;}	
-  </style>
+</div></div>
 
-
-
-
-    </div>
 </asp:Content>
 

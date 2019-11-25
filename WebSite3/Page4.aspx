@@ -14,6 +14,12 @@
         <title>Test Case</title>
         <link href="css/Main.css" rel="stylesheet" type="text/css">
     </head>
+    <div id="main-container">
+    
+
+         <!--begin main content-->
+
+            <div id="container">
 
     <table class="mainTable">
                     <tbody><tr>
@@ -46,6 +52,7 @@
             </td>
         </tr>
     </tbody></table>
+    </div></div>
 
 </asp:Content>
 

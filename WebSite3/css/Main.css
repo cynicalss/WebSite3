@@ -162,8 +162,8 @@ form {
     }
 
 #help {
-    color: #333333;
-    font-size: 12px;
+    color: #ccc;
+    font-size: 10px;
     float: left;
     padding-top: 6px;
     padding-right: 31px;
@@ -175,13 +175,21 @@ form {
     background-repeat: no-repeat;
     background-position: right 0;
 }
+.help {
+	font-family: Tahoma, Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	color: gray;
+	text-align: justify;
+	padding-right: 10px;
+		line-height:12px;
 
+}
 
-.marquee {
+/*.marquee {
     white-space: nowrap;
     overflow: hidden;
     visibility: hidden;
-}
+}*/
 
 #marq_kill_marg_bord {
     border: none !important;
@@ -198,7 +206,14 @@ form {
         border-bottom-style: none;
         border-left-style: none;
     }
-
+.flags{
+	margin-top:80px;
+	width:100px;
+	margin-right:150px;
+	float:right;}
+.flags select{
+	margin-top:0px;
+	}
 
 
 /*________________________________  FOOTER  _____________________________*/
@@ -507,7 +522,7 @@ label {
 }
 
 .input {
-    width: 100px;
+    /*width: 100px;*/
 }
 
 .submit {
@@ -645,8 +660,8 @@ label {
 #bar #topcontainer {
     float: left;
     width: 230px;
-    margin-top: 11px;
-    margin-left: 93px;
+    margin-top: 20px;
+    margin-left: 80px;
     display: inline;
     padding: 0px;
     /*padding-bottom:50px;*/
@@ -736,14 +751,14 @@ label {
 
 #searchBox {
     float: left;
-    width: 260px;
+   /* width: 260px;*/
     display: inline;
     height: 25px;
 }
 
     #searchBox input {
         font-size: 10px;
-        width: 180px;
+       /* width: 180px;*/
         padding: 3px;
     }
 
@@ -1045,11 +1060,13 @@ GridViewForum {
             line-height: 1.1em;
             padding: 8px 0 0 6px;
             display: block;
-            background: #FFFFFF;
+
         }
 
             #nav li a:hover {
                 background: #fafaf7;
+				color:#f06c00;
+				font-weight:bold;
             }
 
         #nav li .selected {
@@ -1060,7 +1077,10 @@ GridViewForum {
         }
 
             #nav li .selected:hover {
-                background: url(../img/nav_bg.gif);
+				background: url(../img/nav_bg.gif) repeat-x 0 0;
+            font-weight: bold;
+			            color: #f06c00;
+
             }
 
 #subnav {
@@ -1273,3 +1293,60 @@ GridViewForum {
 	text-align:center;
 	padding:10px;
 	font-size:18px;}
+.marquee{
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background:#F46514 !important;
+            color: #333;
+            border: 1px solid #fff!important;
+			visibility:visible!important;
+			
+        }
+        
+.marquee p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+			color:#fff!important;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 20s linear infinite ;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }

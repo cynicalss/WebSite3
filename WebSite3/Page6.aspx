@@ -15,7 +15,9 @@
         <link href="css/Main.css" rel="stylesheet" type="text/css">
         <link href="css/calendar-blue.css" rel="stylesheet" type="text/css">
     </head>
-
+    <div id="main-container">
+         <!--begin main content-->
+            <div id="container">
         <tbody><tr>
             <td align="left">
                 <span id="ctl00_mainContent_labelTitle" class="labelTitle">Новини</span>
@@ -101,37 +103,38 @@
 	</select>-->
 
         <asp:Button ID="Button1" runat="server" Text="Покажи" />
-                <!--<input type="submit" name="ctl00$mainContent$buttonSearch" value="Покажи" id="ctl00_mainContent_buttonSearch" class="buttonControlNews"></td>-->
+</td>                <!--<input type="submit" name="ctl00$mainContent$buttonSearch" value="Покажи" id="ctl00_mainContent_buttonSearch" class="buttonControlNews"></td>-->
 </tr>
 
         
-        <tr id="ctl00_mainContent_rowResult">
+    <tr id="ctl00_mainContent_rowResult">
 	<td>
-                
-
-
 <table class="mainTable100">
-    <tbody><tr>
+    <tbody>
+    <tr>
         <td>
-             <div>
 		<table class="GridViewControl" cellspacing="6" cellpadding="6" border="0" id="ctl00_mainContent_contentGridView_mainGridView" style="width:670px;">
-			<tbody><tr class="GridViewItems">
+			<tbody>
+            <tr class="GridViewItems">
 				<td align="left"><span>10.09.2019<br></span><a href="javascript:__doPostBack(&#39;ctl00$mainContent$contentGridView$mainGridView$ctl02$ctl01&#39;,&#39;&#39;)"><b>Планирано въвеждане на нова функционалност в информационната система на търговския регистър и регистъра на юридическите </b><br></a><span>Уважаеми потребители,
 Поради планирано въвеждане на нова функционалност в информационната система на търговския регистър и регистъра на юридически...</span></td>
-			</tr><tr class="AlternateGridViewItems">
+			</tr>
+            <tr class="AlternateGridViewItems">
 				<td align="left"><span>26.07.2019<br></span><a href="javascript:__doPostBack(&#39;ctl00$mainContent$contentGridView$mainGridView$ctl03$ctl01&#39;,&#39;&#39;)"><b>Невярна информация за теч на данни от ТРРЮЛНЦ</b><br></a><span>По повод постъпил сигнал в Агенция по вписванията, относно оплакване, че в Google се откриват индексирани лични данни от сайта на Търговския...</span></td>
-			</tr><tr class="GridViewItems">
-				<td align="left"><span>20.06.2019<br></span><a href="javascript:__doPostBack(&#39;ctl00$mainContent$contentGridView$mainGridView$ctl04$ctl01&#39;,&#39;&#39;)"><b>Планирано обновяване на Информационната система на ТРРЮЛНЦ</b><br></a><span>Уважаеми потребители,
+			</tr>
+            <tr class="GridViewItems">
+			<td align="left"><span>20.06.2019<br></span><a href="javascript:__doPostBack(&#39;ctl00$mainContent$contentGridView$mainGridView$ctl04$ctl01&#39;,&#39;&#39;)"><b>Планирано обновяване на Информационната система на ТРРЮЛНЦ</b><br></a><span>Уважаеми потребители,
 На 21.06.2019 г. в периода от 21:00 ч. до 21:40 ч., поради планирано обновяване на информационната система, няма да бъдат...</span></td>
 			</tr><tr class="AlternateGridViewItems">
-				<td align="left"><span>14.06.2019<br></span><a href="javascript:__doPostBack(&#39;ctl00$mainContent$contentGridView$mainGridView$ctl05$ctl01&#39;,&#39;&#39;)"><b>Електронните услуги ще бъдат ограничени на 15.06.2019г.</b><br></a><span>Агенцията по вписванията уведомява всички потребители, че онлайн услугите на Агенцията ще бъдат ограничени на 15.06.2019 в часовия диапазон 12...</span></td>
+			<td align="left"><span>14.06.2019<br></span><a href="javascript:__doPostBack(&#39;ctl00$mainContent$contentGridView$mainGridView$ctl05$ctl01&#39;,&#39;&#39;)"><b>Електронните услуги ще бъдат ограничени на 15.06.2019г.</b><br></a><span>Агенцията по вписванията уведомява всички потребители, че онлайн услугите на Агенцията ще бъдат ограничени на 15.06.2019 в часовия диапазон 12...</span></td>
 			</tr><tr class="GridViewItems">
-				<td align="left"><span>30.05.2019<br></span><a href="javascript:__doPostBack(&#39;ctl00$mainContent$contentGridView$mainGridView$ctl06$ctl01&#39;,&#39;&#39;)"><b>Агенцията по вписванията започва активно надграждане и оптимизиране на системите</b><br></a><span>Планираните дейности по модернизация на системите ще наложат частични спирания на електронните услуги на Агенцията
+			<td align="left"><span>30.05.2019<br></span><a href="javascript:__doPostBack(&#39;ctl00$mainContent$contentGridView$mainGridView$ctl06$ctl01&#39;,&#39;&#39;)"><b>Агенцията по вписванията започва активно надграждане и оптимизиране на системите</b><br></a><span>Планираните дейности по модернизация на системите ще наложат частични спирания на електронните услуги на Агенцията
 
 До края на годината Агенцията...</span></td>
-			</tr><tr class="pager" style="font-weight:bold;text-decoration:none;">
-				<td colspan="2"><span style="color:Black;"><br></span>
-<div align="right" style="vertical-align:10px">
+			</tr>
+            <tr class="pager" style="font-weight:bold;text-decoration:none;">
+			<td colspan="2">
+            <span style="color:Black;"><br></span>
 
                         <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="img/first.gif" />
                         <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="img/previous.gif" />
@@ -163,29 +166,15 @@
                         <!--<input type="image" name="ctl00$mainContent$contentGridView$mainGridView$ctl08$ImageButton3" id="ctl00_mainContent_contentGridView_mainGridView_ctl08_ImageButton3" class="imageButton" src="img/next.gif" style="border-width:0px;">
                          <input type="image" name="ctl00$mainContent$contentGridView$mainGridView$ctl08$ImageButton4" id="ctl00_mainContent_contentGridView_mainGridView_ctl08_ImageButton4" class="imageButton" src="img/last.gif" style="border-width:0px;">
                            -->
-</div>
                  </td>
 			</tr>
 		</tbody></table>
-	</div>
         </td>
     </tr>
 </tbody></table>
+</td></tr></tbody></div></div>
     <style type="text/css">    
 	.pager span { color:#000000;font-weight:bold;}	
   </style>
-
-            </td>
-</tr>
-
-        
-    </tbody>
-
-
-
-
-
-    </table>
-    </table>
 </asp:Content>
 

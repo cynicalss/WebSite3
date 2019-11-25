@@ -15,10 +15,15 @@
         <link href="css/Main.css" rel="stylesheet" type="text/css">
         <link href="css/calendar-blue.css" rel="stylesheet" type="text/css">
     </head>
+    <div id="main-container">
+    
+
+         <!--begin main content-->
+
+            <div id="container">
 
     <tbody><tr>
         <td>
-             <div>
 	<table class="mainTable" cellspacing="6" cellpadding="6" border="0" id="ctl00_mainContent_mainGridView" style="width:670px;">
 		<tbody><tr class="InsolvencyGridViewHeader" align="left">
 			<th scope="col">
@@ -34,15 +39,13 @@
                         </td>
 		</tr>
 	</tbody></table>
-</div>
         </td>
     </tr>
 </tbody></table>
     <style type="text/css">    
 	.pager span { color:#000000;font-weight:bold;}	
   </style>
-
-
+</div></div>
           
            
 </asp:Content>
