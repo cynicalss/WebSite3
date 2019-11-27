@@ -16,7 +16,6 @@
 
             <div id="container">
 
-            <asp:Button ID="Button2" Text="Back to Gallery" runat="server" onclick="Button1_Click" />
             <div class="gallery-image"><asp:Image ID="Image1" Width="800px" Height="550px" runat="server" /></div>
             <asp:Button ID="Button1" Text="Back to Gallery" runat="server" onclick="Button1_Click" />
 
